@@ -1,0 +1,27 @@
+{
+  "pro": true,
+  "babel": {
+    "presets": [
+      "react",
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ],
+    "plugins": [
+      "transform-class-properties",
+      "transform-object-rest-spread"
+    ]
+  },
+  "plugins": [
+    "jsdom-quokka-plugin",
+    "babel-alias-quokka-plugin"
+  ],
+  "alias": {
+    "scratch": "/Users/aubreyford/Library/Preferences/IntelliJIdea2018.2/scratches/node-scratches"
+  }
+}
