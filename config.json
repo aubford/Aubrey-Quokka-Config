@@ -2,15 +2,17 @@
   "pro": true,
   "babel": {
     "presets": [
-      "react",
       [
         "env",
         {
           "targets": {
-            "node": "current"
-          }
+            "node": "current",
+            "chrome": "70"
+          },
+          "useBuiltIns": "entry"
         }
-      ]
+      ],
+      "react"
     ],
     "plugins": [
       "transform-class-properties",
@@ -19,9 +21,18 @@
   },
   "plugins": [
     "jsdom-quokka-plugin",
-    "babel-alias-quokka-plugin"
+    "babel-alias-quokka-plugin",
+    "quokka/setup-plugin"
   ],
+  "jsdom": {
+    "html": "<div id=\"root\"></div>",
+    "config": {
+      "pretendToBeVisual": true
+    }
+  },
   "alias": {
-    "scratch": "/Users/aubreyford/Library/Preferences/IntelliJIdea2018.2/scratches/node-scratches"
+    "scratch": "/Users/aubreyford/Library/Preferences/IntelliJIdea2018.2/scratches/node-scratches",
+    "webapp": "/Users/aubreyford/workspace/rachio-webapp",
+    "quokka": "/Users/aubreyford/.quokka"
   }
 }
