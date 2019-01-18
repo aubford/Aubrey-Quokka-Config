@@ -1,5 +1,3 @@
-import '@babel/polyfill'
-import 'raf/polyfill'
 import getMuiTheme      from 'material-ui/styles/getMuiTheme'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import ReactDOM         from 'react-dom'
@@ -27,6 +25,4 @@ export const before = config => {
     const html = document.getElementById('comp-container').innerHTML
     console.logg(formatHtml(html))
   }
-
-
 }

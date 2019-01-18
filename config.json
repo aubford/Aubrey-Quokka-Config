@@ -3,7 +3,7 @@
   "babel": {
     "presets": [
       [
-        "env",
+        "@babel/preset-env",
         {
           "targets": {
             "node": "current",
@@ -12,11 +12,7 @@
           "useBuiltIns": "entry"
         }
       ],
-      "react"
-    ],
-    "plugins": [
-      "transform-class-properties",
-      "transform-object-rest-spread"
+      "@babel/preset-react"
     ]
   },
   "plugins": [
