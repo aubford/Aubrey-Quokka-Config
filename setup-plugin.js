@@ -11,15 +11,19 @@ export const before = config => {
   const muiTheme = getMuiTheme()
 
   global.quokka = (comp, Store) => {
-    let Root = () => (
-      <MuiThemeProvider muiTheme={muiTheme}>
-        <div id={'comp-container'}>
-          {comp}
-        </div>
-      </MuiThemeProvider>
-    )
+    class Root extends React.Component {
+      render() {
+        return (
+          <MuiThemeProvider muiTheme={muiTheme}>
+            <div id={'comp-container'}>
+              {comp}
+            </div>
+          </MuiThemeProvider>
+        )
+      }
+    }
     if (Store) {
-      Root = <Provider store={Store}>{Root}</Provider>
+      Root = <Provider store={Store}>{<Root />}</Provider>
     }
     ReactDOM.render(<Root/>, document.getElementById('root'))
     const html = document.getElementById('comp-container').innerHTML
