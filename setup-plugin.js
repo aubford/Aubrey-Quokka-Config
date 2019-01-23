@@ -27,6 +27,6 @@ export const before = config => {
     }
     ReactDOM.render(<Root/>, document.getElementById('root'))
     const html = document.getElementById('comp-container').innerHTML
-    console.logg(formatHtml(html))
+    console.log(formatHtml(html))
   }
 }
