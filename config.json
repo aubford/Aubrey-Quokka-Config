@@ -1,44 +1,10 @@
 {
   "pro": true,
-  "babel": {
-    "presets": [
-      [
-        "@babel/preset-env",
-        {
-          "targets": {
-            "node": "current",
-            "chrome": "70"
-          },
-          "useBuiltIns": "entry"
-        }
-      ],
-      "@babel/preset-react",
-      "@babel/preset-flow"
-    ],
-    "plugins": [
-      [
-        "@babel/plugin-proposal-decorators",
-        {
-          "legacy": true
-        }
-      ],
-      "@babel/plugin-proposal-class-properties"
-    ]
-  },
   "plugins": [
-    "jsdom-quokka-plugin",
-    "babel-alias-quokka-plugin",
     "quokka/setup-plugin"
   ],
-  "jsdom": {
-    "html": "<div id=\"root\"></div>",
-    "config": {
-      "pretendToBeVisual": true
-    }
-  },
   "alias": {
-    "scratch": "/Users/aubreyford/Library/Preferences/IntelliJIdea2018.2/scratches/node-scratches",
-    "webapp": "/Users/aubreyford/workspace/rachio-webapp",
+    "scratch": "/Users/aubreyford/Library/Preferences/IntelliJIdea2019.1/scratches/node-scratches",
     "quokka": "/Users/aubreyford/.quokka"
   }
 }
